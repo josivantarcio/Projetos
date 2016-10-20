@@ -18,9 +18,8 @@ public class Principal {
      */
     public static void main(String[] args) {
         int numero;
-        Scanner dado;
-        dado = new Scanner(System.in);
-        System.out.println("Digite um número inteiro");
+        Scanner dado = new Scanner(System.in);
+        System.out.println("Digite um número inteiro: ");
         numero = dado.nextInt();
         System.out.println("Você digitou o número: " + numero);
     }
