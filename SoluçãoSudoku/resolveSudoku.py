@@ -1,12 +1,13 @@
+from random import randint
 celulas = []
 numeros = []
 subLista = {}
 bloco = []
 temp = []
-t = 0
-for l in range(4):
-    for c in range(4):
-        n = int(input(f"Digite o valor [{l}][{c}] "))
+for l in range(9):
+    for c in range(9):
+        
+        n = randint(0, 9)#int(input(f"Digite o valor [{l}][{c}] "))
         if n >= 0 and n < 10:
             while True:
                 if l <= 2:
@@ -14,21 +15,21 @@ for l in range(4):
                         temp.append(n)
                         subLista['A'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
-                        t = len(bloco[0]['A'])
-                        if 0 < t % 3 == 0:
-                            bloco.pop()
                         break
                     if c >= 3 and c <= 5:
                         temp.append(n)
                         subLista['B'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                     if c >= 6:
                         temp.append(n)
                         subLista['C'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                 if l > 2 and l <= 5:
@@ -36,18 +37,21 @@ for l in range(4):
                         temp.append(n)
                         subLista['D'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                     if c >= 3 and c <= 5:
                         temp.append(n)
                         subLista['E'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                     if c >= 6:
                         temp.append(n)
                         subLista['F'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                 if l > 5 and l <= 8:
@@ -55,18 +59,21 @@ for l in range(4):
                         temp.append(n)
                         subLista['G'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                     if c >= 3 and c <= 5:
                         temp.append(n)
                         subLista['H'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
                     if c >= 6:
                         temp.append(n)
                         subLista['I'] = (temp[:])
                         bloco.append(subLista.copy())
+                        subLista.clear()
                         temp.clear()
                         break
 numeros.append(subLista)
