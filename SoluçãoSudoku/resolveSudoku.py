@@ -10,52 +10,49 @@ for l in range(9):
             while True:
                 if l <= 2:
                     if c >= 0 and c <= 2:
-                        subLista['A'] = n
+                        subLista['a'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                     if c >= 3 and c <= 5:
-                        subLista['B'] = n
+                        subLista['b'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                     if c >= 6:
-                        subLista['C'] = n
+                        subLista['c'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                 if l > 2 and l <= 5:
                     if c >= 0 and c <= 2:
-                        subLista['D'] = n
+                        subLista['d'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                     if c >= 3 and c <= 5:
-                        subLista['E'] = n
+                        subLista['e'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                     if c >= 6:
-                        subLista['F'] = n
+                        subLista['f'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                 if l > 5 and l <= 8:
                     if c >= 0 and c <= 2:
-                        subLista['G'] = n
+                        subLista['g'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                     if c >= 3 and c <= 5:
-                        subLista['H'] = n
+                        subLista['h'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
                     if c >= 6:
-                        subLista['I'] = n
+                        subLista['i'] = n
                         bloco.append(subLista.copy())
                         subLista.clear()
                         break
-numeros.append(subLista)
-for k, v in enumerate(bloco):
-    print(f"{k} de {v}")
